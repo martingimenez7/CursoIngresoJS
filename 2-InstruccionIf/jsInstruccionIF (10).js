@@ -1,27 +1,25 @@
 function mostrar()
 {
-	//Genero el número RANDOM entre 1 y 10 
+  //Genero el número RANDOM entre 1 y 10 
 
-    var random;
-   
-   random = prompt("ingresar la nota");
-   random = parseInt(random);
+  var mensaje;
+  var numerorandom;
+   var numerorandom =Math.floor((Math.random() * 10) + 1); 
 
-    
-    if (random>8&&random<11)
+    if (numerorandom>8&&numerorandom<11)
      {
-         alert("EXELENTE");
+         mensaje="EXELENTE";
      }
-    
-   if (random>4&&random<9)
+
+   if (numerorandom>4&&numerorandom<9)
      {
-         alert("aprobo");
+         mensaje= "aprobo";
      }
 
-   if (random<4)
-     {    	
-         alert("vamos, la proxima se puede");
+   if (numerorandom<4)
+     {      
+        mensaje="vamos, la proxima se puede";
      }
-    
 
+    alert(mensaje);
 }//FIN DE LA FUNCIÓN
