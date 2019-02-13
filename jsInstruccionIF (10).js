@@ -4,7 +4,7 @@ function mostrar()
     
     var mensaje;
     var numerorandom;
-    var numerorandom =Math.floor((Math.random() * 10) + 1); 
+    var numerorandom =Math.floor((Math.random() * 11) + 1); 
    
     if (numerorandom>8&&numerorandom<11)
      {
