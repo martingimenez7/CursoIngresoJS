@@ -9,17 +9,16 @@ function mostrar()
     if (numerorandom>8&&numerorandom<11)
      {
          mensaje="EXELENTE";
-     }
-    
-   if (numerorandom>4&&numerorandom<9)
-     {
-         mensaje= "aprobo";
-     }
-
-   if (numerorandom<4)
-     {    	
+     }else
+        if(numerorandom>4&&numerorandom<9)
+       {
+          mensaje= "aprobo";
+       }else
+       {     
         mensaje="vamos, la proxima se puede";
-     }
+       }
+
+     
    
     alert(mensaje);
 
