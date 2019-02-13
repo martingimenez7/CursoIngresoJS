@@ -1,10 +1,22 @@
 function mostrar()
 {
-  var nombre;
-  var localidad;
+  var precioefectivo;
+  var preciotargeta;
+  var recargo;
+  var preciofinal;
 
-  nombre = elNombre.value;
-  localidad = laLocalidad.value;
+  precioefectivo = prompt("ingrese el precio del producto");
+ 
+  precioefectivo = parseInt(precioefectivo);
 
-  alert("usted es " + nombre + " y vive en la localidad de " + localidad);
+  preciotargeta = parseInt(preciotargeta);
+ 
+  recargo = precioefectivo * 10 /100;
+
+  preciotargeta = precioefectivo + recargo;
+
+  preciofinal = preciotargeta;
+
+    alert("el precio de producto en efectivo es "+precioefectivo+", con tarjeta tiene un recargo del 10%, que seria "+recargo+", costandole final "+preciofinal);
 }
+
