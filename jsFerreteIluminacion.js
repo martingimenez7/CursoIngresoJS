@@ -25,28 +25,27 @@ function CalcularPrecio ()
  	if(cantidadlamparas>5){
 
  		descuento=50;		
-
- 	}else{
+    }else{
  	
- 	  if(cantidadlamparas==5){
+ 	    if(cantidadlamparas==5){
  	 	
- 	       if(marca=="ArgentinaLuz"){
+ 	        if(marca=="ArgentinaLuz"){
  	 	
- 	 	     descuento= 40;			 
- 	 	    }else{
+ 	 	        descuento= 40;	
+ 	        }else{
  	 	
- 	 	       	  descuento=30;	
- 	               else{	 
+ 	 	       	descuento=30;	
+ 	            else{	 
  	      	 
- 	      	           if(cantidadlamparas==4){
+ 	      	       if(cantidadlamparas==4){
  	      	 
- 	      	                if(marca=="ArgentinaLuz"||marca=="“FelipeLamparas”"){
+ 	      	           if(marca=="ArgentinaLuz"||marca=="“FelipeLamparas”"){
  	      	
- 	      	         	           descuento= 30;			      	 
- 	      	                 }else{
+ 	      	         	   descuento= 30;			      	 
+ 	      	            }else{
  	      	   
- 	      	                   descuento= 30;			      	
- 	      	  	                } else{
+ 	      	               descuento= 30;			      	
+ 	      	  	        } else{
 
  	      	     	      	if(cantidadlamparas==3){
  	      	     	      	
@@ -59,16 +58,18 @@ function CalcularPrecio ()
  	      	     	      	    }
  	      	     	      	       if (marca=="“FelipeLamparas”"){
  	      	     	      	     		 	      	     	      	
- 	      	     	      	     	   descuento= 30;		      	     	      	     		 	      	     	      	
+ 	      	     	      	     	    descuento= 30;		      	     	      	     		 	      	     	      	
  	      	     	      	        }else{
  	      	     	      	     		 	      	     	      	
  	      	     	      	     	   descuento= 30;		 	      	     	      	     		 	      	     	      	 	 		
  	      	     	      	     	}else{
  	      	     	      	     		 	      	     	      	
- 	      	     	      	     		 descuento= preciobruto*100/100;		      	     	      	     		 	      	     	      	
+ 	      	     	      	     	   descuento= preciobruto*100/100;		      	     	      	     		 	      	     	      	
  	      	     	      	     		 	      	     	      	     } 
- 	      	     	}//if(cantidad>5)
- 	      	     	      	     		 	      	     	      }//if(cantidad==5)
+ 	    }//if(cantidad>5)
+            }//if(cantidad==5)
+                            }//if(cantidad==4)
+ 	      	     	      	       }//if(cantidad==3)	 	      	     	      }//if(cantidad==5)
  	      	     	      	     		 	      	     	  }//if(cantidad==4)
  	      	     	      	     		 	      	     	}//if(cantidad==3)
 
