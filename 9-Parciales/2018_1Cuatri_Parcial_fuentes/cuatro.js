@@ -1,8 +1,6 @@
 function mostrar()
 {
   var cantidad;
-  var descuentouno;
-  var descuentodos;
   var metododepago;
   var recargo;
   var precioproducto;
@@ -10,82 +8,46 @@ function mostrar()
   var calculodos;
   var preciofinal;
 
-  cantidad =  pronta ( " ingrese la cantidad de productos comprados " );
+  cantidad =  prompt ( " ingrese la cantidad de productos comprados " );
   precioproducto =  prompt ( " ingrese el precio de / los productos " );
   metododepago =  prompt ( " paga con targeta o efectivo? " );
 
-
-  calculouno =  parseInt (calculouno);  
-  calculodos =  parseInt (calculodos);  
-  recargo =  parseInt (recargo);
-  preciodelproducto = parseInt (precioproducto);
-
-  si (cantidad > 2 )
+  if (cantidad > 2 )
   {
-    calculouno = precioproducto * 10 / 100 ;
-    preciofinal = precioproducto + calculouno;
-  }
-  si (precioproducto > 1999 )
-  {
-    calculodos = precioproducto * 15 / 100 ;
-    calculouno = precioproducto * 10 / 100 ;
-    preciofinal = precioproducto - calculodos - calculouno;
-  }
+    if (cantidad > 2 ) 
+      {
+     calculouno =  parseInt (calculouno);
+     precioproducto = parseInt(precioproducto); 
+     calculouno = precioproducto * 10 / 100 ;
+     preciofinal = precioproducto - calculouno;
+   }else
+    {
+       preciofinal;
+    }
 
+   if (precioproducto > 1999 )
+    {
+     calculodos = parseInt(calculodos); 
+     precioproducto = parseInt(precioproducto); 
+     calculodos = precioproducto * 15 / 100 ;
+     preciofinal = precioproducto - calculodos;
+        }else
+         {
+           preciofinal;
+         }
+  }       
+  
   if (metododepago == " targeta " )
   {
-    recargo = precioproducto * 10 / 100 ;
-    preciofinal = preciofinal + recargo;
+     recargo = parseInt (recargo);
+     preciodelproducto = parseInt (precioproducto);
+     recargo = precioproducto * 10 / 100 ;
+     preciofinal = preciofinal + recargo;
   }
   if (metododepago == " efectivo " )
   {
-
+    preciofinal;
   }
   alert( " el monto final es de "  + preciofinal);
+
 }
-
-
-/*{
-  var numerouno;
-  var numerodos;
-  var resultado;
-  var suma;
-
-  numerouno = prompt("ingrese un numero");
-  numerouno = parseInt(numerouno);
-  numerodos = prompt("ingrese otro numero");
-  numerodos = parseInt(numerodos);
-  resultado = numerouno+numerodos;
-
-  if (numerouno&&numerodos);
-  {
-  	if(numerouno==numerodos)
-  	{
-  	    alert(numerouno + numerodos);
-  	}
-  	
-  }
-  
-  if(numerouno||numerodos)
-  {
-  	if(numerouno>numerodos)
-  	{
-  		alert(numerouno - numerodos);
-  	}
-  	if (numerouno<numerodos)
-  	{
-  		alert(numerouno+numerodos);
-  	}
-  }
-
-  if ()
-  {
-  	if(resultado>10)
-  	{
-  		alert("el resultado es: "+resultado+" y supero el 10");
-  	}
-  }
-
-  
-}
-

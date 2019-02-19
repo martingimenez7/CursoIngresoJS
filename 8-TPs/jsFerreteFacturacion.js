@@ -26,9 +26,6 @@ function Sumar ()
   resultado = suma
 
   alert("la suma es de: " + resultado);
-  
-  //sumar en amarillo en el html
-
 }
 function Promedio () 
 {
@@ -86,7 +83,5 @@ function PrecioFinal ()
 
   resultado = sumaiva;
 
-  alert("el promedio es de: " + sumaiva);
-
-
+  alert("el precio final es de: " + sumaiva);
 }

@@ -36,13 +36,48 @@ function Rectangulo ()
 
   resultado = alambreportres;
 
-  alert("la cantidad de alambre que se necesita es: " + alambreportres + " mts");
+  alert("la cantidad de alambre que se necesita es: " + resultado + " mts");
 }
 function Circulo () 
 {
-	
+	var radio;
+  var alambre;
+  var alambreportres;
+  var resultado;
+
+  radio = Radio.value;
+  radio = parseInt(radio);
+
+  alambreportres= radio * 3;
+  resultado = alambreportres;
+
+ alert("la cantidad de alambre que se necesita es: " + resultado + " mts");
 }
 function Materiales () 
 {
-	
-}
+	var cemento;
+  var cal;
+  var largo;
+  var ancho;
+  var multiplicacionl;
+  var multiplicaciona;
+  var radio;
+
+  largo = Largo.value;
+  largo = parseInt(largo);
+
+  ancho = Ancho.value;
+  ancho = parseInt(ancho); 
+
+  multiplicacionl = largo * 2;
+  multiplicaciona = ancho * 2;
+  
+  radio = multiplicacionl + multiplicaciona;
+  Radio.value = radio;
+
+  cemento = radio * 2;
+  cal = radio * 3;
+
+  alert("se necesitan "+cemento+" bolsas de cemento y "+cal+" de cal");
+
+} 

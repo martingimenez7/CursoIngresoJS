@@ -1,0 +1,83 @@
+
+var numeroSecreto; 
+    var contadorIntentos = 0;
+    var numeroIngresado;
+    var intentos;
+    var tePasaste;
+
+function verificar()
+{
+	  numeroIngresado=document.getElementById("numero").value;   
+
+    contadorIntentos = 0
+
+    intentos++;
+    document.getElementById("intentos").value=intentos;
+    tePasaste= numeroSecreto - numeroIngresado;
+    
+    if (numeroIngresado==numeroSecreto)
+   {     
+     alert("Usted es un ganador!!! y en solo " + contadorIntentos + " intentos");
+   
+     intentos=0;
+
+   }
+	  else if (numeroIngresado > numeroSecreto)
+    {
+      alert("Te faltó " + tePasaste + " para adivinarlo");
+        
+    }
+	   //{
+         //alert("te faltó" +tePasaste+ "para adivinarlo");
+	   //}
+           //if (numeroIngresado > numeroSecreto) 
+           //{
+      	     //alert("te pasaste wey");
+           //}
+             //else
+		     //{
+			  //alert("Te falta..");
+		     //}
+	}
+
+
+
+
+
+
+
+
+
+
+
+   /* if(numeroin==numeroSecreto)
+      {
+       mensaje = "Usted es un ganador!!! y en solo "+ contadorIntentos +" intentos";
+       intentos = 0;
+
+      }else
+        {
+        if(numeroin>numeroSecreto)
+             {
+                 numeroSecreto = parseInt(numeroSecreto);
+                 numeroin = parseInt(numeroin);
+                 tePasaste= numeroSecreto - numeroin;    
+                 mensaje = "te pasaste!!! te faltaron "+ tePasaste +" para adivinarlo";
+
+             }else
+            {
+                 numeroSecreto = parseInt(numeroSecreto);
+                 numeroin = parseInt(numeroin);
+                 teFalto= numeroSecreto + numeroin;
+                 mensaje = "Te falta!!! te faltan "+ teFalto +" para adivinarlo";
+            }
+      }
+   
+    alert(mensaje);*/ 
+
+
+
+
+
+
+

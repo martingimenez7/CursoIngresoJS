@@ -2,21 +2,21 @@ function mostrar()
 {
 //tomo la edad  
 
- var edad
-  var mensaje
+ var edadm;
+  var mensaje;
 
-  edad=laEdad.value;
+  edadm=edad.value;
 
-  if (edad>17)
+  if (edadm>17)
     {
-       mensaje="mayor";
+       mensaje="usted es un mayor";
     }else
     {
-    	mensaje="adolescente";
+    	mensaje="usted es un adolescente";
     } 
-     if(<12)
+     if(edadm<12)
      {
-     	mensaje="niño";
+     	mensaje="usted es un niño";
      }
      alert(mensaje);
 
