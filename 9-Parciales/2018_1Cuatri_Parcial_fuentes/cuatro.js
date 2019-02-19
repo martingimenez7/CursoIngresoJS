@@ -1,6 +1,41 @@
 function mostrar()
 {
-  var cantidad;
+   var numeroUno;
+   var numeroDos;
+   var mensaje;
+   var resultado;
+
+   numeroUno = prompt("ingrese el primer numero");
+   numeroUno = parseInt(numeroUno);
+   numeroDos = prompt("ingrese el segundo numero");
+   numeroDos = parseInt(numeroDos);
+
+   if(numeroUno==numeroDos){
+
+      mensaje = numeroUno + numeroDos;
+   }else{
+
+      if(numeroUno>numeroDos){
+
+        mensaje = numeroUno - numeroDos;
+      }else{
+
+        if(numeroUno<numeroDos){
+
+          mensaje = numeroUno + numeroDos;
+        }
+      }
+    }
+    resultado = numeroUno + numeroDos;
+   if(resultado>10){
+
+    mensaje = "la suma es "+resultado+" y supero el diez";
+   }
+
+   alert(mensaje);
+}
+
+/* var cantidad;
   var metododepago;
   var recargo;
   var precioproducto;
@@ -13,7 +48,7 @@ function mostrar()
   metododepago =  prompt ( " paga con targeta o efectivo? " );
 
   if (cantidad > 2 )
-  {
+{
     if (cantidad > 2 ) 
       {
      calculouno =  parseInt (calculouno);
@@ -48,6 +83,4 @@ function mostrar()
   {
     preciofinal;
   }
-  alert( " el monto final es de "  + preciofinal);
-
-}
+  alert( " el monto final es de "  + preciofinal);*/

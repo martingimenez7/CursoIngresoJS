@@ -1,23 +1,5 @@
 function mostrar()
 {   
-  var nombreuno;
-  var nombredos;
-  var edaduno;
-  var edaddos;
-  var suma;
-
-   nombreuno =  prompt ( " ingrese su nombre " );
-   nombredos =  prompt ( " ingrese su nombre " );
-   edaduno =  pronta ( " ingrese su edad " );
-   edaduno =  parseInt (edaduno);
-   edaddos =  prompt ( " ingrese su edad " );
-   edaddos =  parseInt (edaddos);
-
-   suma = edaduno + edaddos;
-
-   alerta ( " ustedes son " + nombreuno + " y " + nombredos + " , sus edades son " + edaduno + " y " + edaddos + " , y la suma de sus edades es " + suma);
-}
-/*{   
    var ancho;
    var largo;
    var calculoancho;
@@ -37,7 +19,11 @@ function mostrar()
   
    alert("el perimetro del rectangulo es de: " + perimetro);
 }
-=======
+
+
+
+
+/*=======
 function mostrar()
 {   
   var nombreuno;
@@ -57,4 +43,4 @@ function mostrar()
 
    alert("ustedes son "+ nombreuno +" y "+ nombredos +" ,sus edades son "+ edaduno +" y "+ edaddos +" , y la suma de sus edades es "+ suma);
 }
->>>>>>> bd15091466ca1efc9b9d7086a63c468ea6f23ad1
+>>>>>>> bd15091466ca1efc9b9d7086a63c468ea6f23ad1*/
