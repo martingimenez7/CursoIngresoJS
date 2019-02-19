@@ -81,3 +81,37 @@ function verificar()
 
 
 
+var numeroSecreto; 
+var contadorIntentos;
+var numeroIngresado;
+var tePasaste;
+var intentos;
+var teFalto;
+
+function comenzar()
+{  
+   var numeroSecreto;
+
+   numeroSecreto = Math.floor((Math.random() * 100) + 1);
+   console.log(numeroSecreto);
+}
+
+function verificar()
+{
+  numeroIngresado=numero.value;   
+
+  contadorIntentos = 0
+
+  intentos++;
+  intentos.value=intentos;
+    
+  if (numeroIngresado==numeroSecreto){ 
+      
+   alert("Usted es un ganador!!! y en solo " + contadorIntentos + " intentos");   
+   intentos=0;
+  }else if (numeroIngresado > numeroSecreto){ 
+     
+    tePasaste= numeroSecreto - numeroIngresado;
+    alert("Te pasaste, te faltó " + tePasaste + " para adivinarlo");
+  }
+} 
