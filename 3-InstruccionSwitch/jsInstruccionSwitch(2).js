@@ -1,11 +1,12 @@
 function mostrar()
 {
-//tomo la edad  
-var mesDelAño = document.getElementById('mes').value;
+ var contador=10;
 
-alert (mesDelAño);
+ while(contador>0)
+ {
+ 	console.log(contador)
+ 	contador=contador-1
+ }
 
 
-
-
-}//FIN DE LA FUNCIÓN
+}//FIN DE LA FUNCIÓN 

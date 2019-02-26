@@ -1,11 +1,12 @@
 function mostrar()
 {
-//tomo la edad  
-var mesDelAño = document.getElementById('mes').value;
 
-//alert (mesDelAño);
-	
-	
+var clave = prompt("ingrese el número clave.");
+
+while(clave!="utn750")
+{
+	clave=prompt("ingrese el numero clave");
+}
 
 
 }//FIN DE LA FUNCIÓN
