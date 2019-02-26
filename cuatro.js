@@ -1,49 +1,49 @@
 function mostrar()
 {
-  var cantidad;
-  var descuentouno;
-  var descuentodos;
-  var metododepago;
-  var recargo;
-  var precioproducto;
-  var calculouno;
-  var calculodos;
-  var preciofinal;
- 
-  cantidad = prompt("ingrese la cantidad de productos comprados");
-  precioproducto = prompt("ingrese el precio de/los productos");
-  metododepago= prompt("paga con targeta o efectivo?");
-  
-  
-  calculouno= parseInt(calculouno);  
-  calculodos = parseInt(calculodos);  
-  recargo = parseInt(recargo);
-  preciodelproducto=parseInt(precioproducto);
+   var importeUno;
+   var importeDos;
+   var importeTres;
+   var importeCuatro;
+   var suma;
+   var resultado;
+   var descuentoUno;
+   var descuentoDos;
+   var aumento;
+   var precioFinal;
+   var mensaje;
+   var mensajeM;
 
-  if(cantidad>2)
-  {
-    calculouno=precioproducto*10/100;
-    preciofinal=precioproducto+calculouno;
-  }
-  if (precioproducto>1999)
-  {
-    calculodos=precioproducto*15/100;
-    calculouno=precioproducto*10/100;
-    preciofinal=precioproducto-calculodos-calculouno;
-  }
+   importeUno=prompt("ingrese el primer numero");
+   importeUno=parseInt(importeUno);
+   importeDos=prompt("ingrese el segundo numero");
+   importeDos=parseInt(importeDos);
+   importeTres=prompt("ingrese el tercer numero");
+   importeTres=parseInt(importeTres);
+   importeCuatro=prompt("ingrese el cuarto numero");
+   importeCuatro=parseInt(importeCuatro);
 
-  if(metododepago=="targeta")
-  {
-    recargo=precioproducto*10/100;
-    preciofinal=preciofinal+recargo;
-  }
-  if(metododepago=="efectivo")
-  {
-    
-  }
-  alert("el monto final es de " + preciofinal);
+   suma = importeUno + importeDos + importeTres + importeCuatro;
+   resultado = suma
 
-  
+   if(resultado>100){
+   	 mensajeM = "el numero mayor es " + >(importeUno,importeCuatro,importeTres,importeDos);
+   	 descuentoUno = resultado *10 /100;
+   	 precioFinal = resultado - descuentoUno;
+   	 mensaje = "el precio final es de " + precioFinal + " y tuvo un descuento del " + descuentoUno;
+   }else{
+        if(suma>50){
+        	mensajeM = "el numero mayor es " 
+        	descuentoDos = resultado*5/100;
+        	precioFinal = resultado-descuentoDos;
+        	mensaje = "el precio final es de " + precioFinal + " y tuvo un descuento del " + descuentoDos;
+        }else{
+        	mensajeM = "el numero mayor es " 
+        	aumento = resultado*15/100;
+        	precioFinal = resultado+aumento;
+        	mensaje = "el precio final es de " + precioFinal + " y tuvo un aumento del " + aumento;
+        }//suma<50
+    }//suma>100
 
+    alert(mensajeM);
+    alert(mensaje);
 }
-
