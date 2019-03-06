@@ -1,22 +1,60 @@
 function mostrar()
 {
-    var nota1 = prompt("Por favor, ingrese su nota");
-    var nota2 = prompt("Por favor, ingrese su nota");
-    var nota3 = prompt("Por favor, ingrese su nota");
-    var nota4 = prompt("Por favor, ingrese su nota");
-    var nota5 = prompt("Por favor, ingrese su nota"); 
-    /*var sexo1 = prompt("Por favor ingrese su sexo");
-    var sexo2 = prompt("Por favor ingrese su sexo");
-    var sexo3 = prompt("Por favor ingrese su sexo");
-    var sexo4 = prompt("Por favor ingrese su sexo");
-    var sexo5 = prompt("Por favor ingrese su sexo");*/
+   var notas;
+   var sexo;
+   var contador=0;
+   var acumulador=0;
+   var notaMinima=0;
+   var sexoNotaMasBaja;
+   var cantidadDeVaronesMayorASeis=0;
+   var mensaje1;
+   var mensaje2;
+   var promedio;
+ 
+  while(contador<5)
+  {
+    notas = prompt("Ingrese su nota");
+    notas = parseInt(notas);
+   while(isNaN(notas)== true || notas<0 || notas>10)
+    {
+      notas = prompt("Error, ingrese su nota");
+      notas = parseInt(notas);
+    }
 
-    nota1, nota2, nota3, nota4, nota5 = parseInt(nota1, nota2, nota3, nota4, nota5);
+    sexo = prompt("Ingrese sexo");
+   while(isNaN(sexo)==false || sexo!="f" && sexo!="m")
+    {
+      sexo = prompt("Error, ingrese sexo");
+    }
+
+    acumulador= acumulador + notas;
     
+    if(contador==0){
 
-   while(nota1<=10&&nota2<=10&&nota3<=10&&nota4<=10&&nota5<=10)
-   {
-      promedio = nota1 + nota2 + nota3 + nota4 + nota5 / 5;
-      alert("el promedio de las notas de los 5 alumnos es " + promedio);
-   }
+      notaMinima = notas;
+      sexoNotaMasBaja = sexo;
+      mensaje1 = "La nota mas baja es "+ notaMinima +" y su sexo es "+ sexo;
+
+     }else if(notaMinima>notas){
+
+         notaMinima = notas;
+         sexoNotaMasBaja = sexo;
+         mensaje1 = "La nota mas baja es "+ notaMinima +" y su sexo es "+ sexo;
+      }
+
+    if(notas>6 && sexo=="m"){
+
+      cantidadDeVaronesMayorASeis = cantidadDeVaronesMayorASeis+1;
+      mensaje2 = "La cantidad de varones con nota mayor a seis son " + cantidadDeVaronesMayorASeis;
+    }else{
+      mensaje2 = "";
+    }
+  
+   contador = contador+1;
+  }
+
+  acumulador=acumulador/5;
+  promedio=acumulador;
+  
+  alert("El promedio de las notas totales es " + promedio +". "+ mensaje1 +". "+ mensaje2);
 }

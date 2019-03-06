@@ -1,46 +1,23 @@
 function mostrar()
 {   
-   var ancho;
-   var largo;
-   var calculoancho;
-   var calculoancho;
-   var perimetro;
+    var largo;
+    var ancho;
+    var largoX2;
+    var anchoX2;
+    var perimetro;
+    var calculo;
 
-   ancho = prompt("ingresar el ancho de un rectangulo");    
+    largo = prompt("Por favor, ingrese el largo del rectangulo");
+    ancho = prompt("Por favor, ingrese el ancho del rectangulo");
+
+    largo = parseInt(largo);
     ancho = parseInt(ancho);
 
-    largo = prompt("ingrese el largo de un rectangulo");
-     largo = parseInt(largo); 
+    largoX2 = largo * 2;
+    anchoX2 = ancho * 2;
 
-    calculoancho = ancho * 2;
-    calculolargo = largo * 2;
+    calculo = largoX2 + anchoX2;
+    perimetro = calculo;
 
-    perimetro = calculoancho + calculolargo;
-  
-   alert("el perimetro del rectangulo es de: " + perimetro);
+    alert("el perimetro del rectangulo es: " + perimetro);
 }
-
-
-
-
-/*=======
-function mostrar()
-{   
-  var nombreuno;
-  var nombredos;
-  var edaduno;
-  var edaddos;
-  var suma; 
-
-   nombreuno = prompt("ingrese su nombre");
-   nombredos = prompt("ingrese su nombre");
-   edaduno = prompt("ingrese su edad");
-   edaduno = parseInt(edaduno);
-   edaddos = prompt("ingrese su edad");
-   edaddos = parseInt(edaddos);
-
-   suma = edaduno + edaddos;
-
-   alert("ustedes son "+ nombreuno +" y "+ nombredos +" ,sus edades son "+ edaduno +" y "+ edaddos +" , y la suma de sus edades es "+ suma);
-}
->>>>>>> bd15091466ca1efc9b9d7086a63c468ea6f23ad1*/

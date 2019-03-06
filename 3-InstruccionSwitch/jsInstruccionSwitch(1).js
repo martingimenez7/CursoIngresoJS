@@ -1,17 +1,46 @@
 function mostrar()
 {
-	//alert('iteración while');
-//toda iteracion tiene un comienzo, un recorrido y una ccion que marca su final.
-var contador=0;
+   var habitacion;
+   var medioDePago;
+   var descuento;
+   var resultado;
+   var paquete;
+   
+   habitacion=prompt("ingresar precio de habitacion");
 
-while(contador<10)
-{
+   paquete=prompt("tiene algun paquete?")
 
- contador=contador+1;
- console.log(contador);	
-}
-//paso1=var
-//paso2=while()
-//paso3contador=contador+1
-//numero fuera de llaves "10"
+   medioDePago=prompt("ingresar medio de pago");
+
+
+   switch(medioDePago)
+   {
+       case "targeta visa":
+            descuento = 10;
+        break
+
+        case "paypal":
+            descuento = 15;
+        break
+ 
+        case "mercadopago":
+            descuento = 10;
+        break
+
+        case "efectivo":
+            descuento = 20;
+        break
+
+        default :
+            descuento = 5;
+        break                            
+   }
+   
+    habitacion=parseInt(habitacion);
+    descuento=parseInt(descuento);
+
+    descuento=habitacion*descuento/100;
+    resultado=habitacion-descuento;
+
+    alert("el precio final es de "+resultado);
 }//FIN DE LA FUNCIÓN 
